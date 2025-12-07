@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activity CSS3</title>
+    <style>
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background: #fff;
+        margin: 0;
+    }
+    .container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #pic, .heading, .para1, .para2, .foot {
+        width: 40%;
+        padding: 10px;
+        margin: 10px;
+        border-radius: 9px;
+        box-sizing: border-box;
+    }
+    #pic {
+        background: rgb(2, 142, 46);
+        display: flex;
+        align-items: center;
+        height: 120px;
+    }
+    #pic img {
+        border-radius: 50%;
+        width: 100px;
+        height: 100px;
+        margin-right: 20px;
+        object-fit: cover;
+    }
+    .heading { background: rgb(14, 47, 237); color: #fff; }
+    .para1 { background: rgb(238, 179, 43); color: #222; }
+    .para2 { background: rgb(161, 32, 197); color: #fff; }
+    .foot { background: rgb(225, 101, 101); color: blue; text-align: center;}
+    .at-word {
+        color: #bf10bc; /* Gold */
+        font-weight: bold;
+    }
+    
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="pic">
+            <img src="oip.webp" alt="oip">
+        </div>
+        <div class="heading">
+            <h1>John Doe</h1>
+            <p>Web Developer <span class="at-word"></span>at</span> Tech Solutions</p>
+        </div>
+        <div class="para1">
+            <p>
+                Passionate about creating innovative web solutions that enhance user experience and functionality.
+                Experienced in HTML, CSS, JavaScript, and responsive design.
+            </p>
+        </div>
+        <div class="para2">
+            <p><strong>Email:</strong> johndoe@example.com</p>
+            <p><strong>Phone:</strong> (123)456-7890</p>
+        </div>
+        <div class="foot">
+            <footer>
+                <a href="#" style="color:blue;">Twitter</a> &nbsp;
+                <a href="#" style="color:blue;">LinkedIn</a>
+            </footer>
+        </div>
+    </div>
+</body>
+</html>
